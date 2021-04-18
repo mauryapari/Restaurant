@@ -10,6 +10,7 @@ module.exports = {
     devServer: {
         port:3010,
         watchContentBase: true,
+        historyApiFallback: true,
     },
     module:{
         rules:[

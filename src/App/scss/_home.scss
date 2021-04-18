@@ -1,0 +1,29 @@
+.links {
+    color: black;
+    text-decoration: none;
+}
+header{
+    padding: 20px 200px;
+        align-content: center;
+        display: flex;
+    .logo-section {
+        span{
+            font-size: 34px;
+            display: block;
+        }
+        flex-basis: 35%;
+    }
+    .navbar {
+        flex-basis: 65%;
+        ul{
+            display:flex;
+            justify-content: center;
+            .links{
+                font-size: 24px;
+                flex-basis: 25%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
