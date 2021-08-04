@@ -10,6 +10,7 @@ module.exports = {
     devServer: {
         port:3010,
         watchContentBase: true,
+        contentBase:"./src"
     },
     module:{
         rules:[
@@ -27,7 +28,13 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ],
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                use: {
+                    loader: "file-loader",
+                },
+            },
         ]
     }
 };
