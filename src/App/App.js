@@ -6,16 +6,16 @@ import Login from './Components/Login/Login';
 import './Sass/Base.scss'
 
 export default function App () {
-    const [showLogin, setShowLoginModule] = useState(false);
+    const [showLogin, settoogleLoginModule] = useState(false);
 
     const showLoginModuleHandler = (event) => {
         event.preventDefault();
         console.log(showLogin);
-        setShowLoginModule((prevState) => !prevState);
+        settoogleLoginModule((prevState) => !prevState);
     }
     return (
         <React.Fragment>
-            {showLogin && <Login></Login>}
+            {showLogin && <Login show={showLoginModuleHandler}></Login>}
             <div className="background">
                 <Header show={showLoginModuleHandler}/>
                 <Landing/>
