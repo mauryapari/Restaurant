@@ -25,13 +25,13 @@ const Service = () => {
                                 <img src={People} alt="dinning"/>
                                 </div>
                                 <div className="top-part__content">
-                                    <h4>Advanced Booking Tabel</h4>
+                                    <h4>Advanced Tabel Booking</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
                             </div>
                             <div className="bottom-part">
                                 <div className="bottom-part__content">
-                                    <h4>Advanced Booking Tabel</h4>
+                                    <h4>Food For Free 24/7</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
                                 <div className="bottom-part__img">
