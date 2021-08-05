@@ -8,16 +8,22 @@ import './Sass/Base.scss'
 export default function App () {
     const [showLogin, settoogleLoginModule] = useState(false);
 
+    const [userData , setUserData] = useState({name:'User', isLogin: false});
+
+    const userDataHandler = (data) => {
+        setUserData(
+            {name: data.email, isLogin: true}
+        );
+    }
     const showLoginModuleHandler = (event) => {
         event.preventDefault();
-        console.log(showLogin);
         settoogleLoginModule((prevState) => !prevState);
     }
     return (
         <React.Fragment>
-            {showLogin && <Login show={showLoginModuleHandler}></Login>}
+            {showLogin && <Login show={showLoginModuleHandler} setUserData={userDataHandler}></Login>}
             <div className="background">
-                <Header show={showLoginModuleHandler}/>
+                <Header show={showLoginModuleHandler} user={userData}/>
                 <Landing/>
                 <Service/>
             </div>

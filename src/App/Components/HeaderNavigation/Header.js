@@ -18,7 +18,7 @@ const Header = (props) => {
           <div className="user-login__image">
             <img src={User}/>
           </div>
-          <a href="#" onClick={props.show}>User</a>
+          <a href="#" onClick={props.show}>{props.user.name}</a>
       </div>
   </header>;
 };
